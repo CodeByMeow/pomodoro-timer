@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { Duration } from "../../configs/durationType";
+import { Duration } from "../../configs/duration";
 import { Heading } from "@chakra-ui/react";
 
 interface DurationStatusProps {
@@ -13,5 +13,6 @@ const DurationStatus: FC<DurationStatusProps> = ({ duration }) => {
         </Heading>
     );
 };
+
 export default DurationStatus;
 

@@ -6,7 +6,7 @@ import {
 } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 import CurcularProvider from "../CurcularProvider";
-import { Duration } from "../../configs/durationType";
+import { Duration } from "../../configs/duration";
 
 interface CircularProps {
     value: number;
@@ -14,11 +14,7 @@ interface CircularProps {
     children: ReactNode;
 }
 
-const Circular: FC<CircularProps> = ({
-    value,
-    duration = "Work",
-    children,
-}) => {
+const Circular: FC<CircularProps> = ({ value, duration, children }) => {
     const [workColor, breakColor, bgColor] = useToken("colors", [
         "pomodoro.s5",
         "pomodoro.s6",
